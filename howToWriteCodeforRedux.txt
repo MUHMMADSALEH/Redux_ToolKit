@@ -1,0 +1,17 @@
+1.install dependencies react-redux and @reduxjs/toolkit.
+2. a).create a folder for redux
+   b).create a file Store.js And import configureStore from @reduxjs/toolkit
+   c).create a variable Store variable for reducers.
+   d)1.create a slice folder in redux and for every componenet that we wanted to update we create a file in slice folder.
+
+   creating slices:
+      1.import createSlice from @reduxjs/toolkit and in createSlice we'll comfigure name,initial state and reducer function and export reducer function into Store
+
+
+      Acessing Slices:
+
+      1 wrapp app with {Provider} componenet(importing from react-redux) and pass Store into Provider componenet
+
+
+      2.import useSlector hook from react-redux in which componenet we wanted to access state.
+      3.import useDispatch hook from react-redux  to update state  (handler function is responsible for dispatching).
